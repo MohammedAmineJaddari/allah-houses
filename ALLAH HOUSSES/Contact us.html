@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allah Houses</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="Contact us.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="Sans titre (6).png">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+          <i class='bx bx-home-heart'></i>
+            <div class="logo_name">ALLAH Houses</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+          <li>
+              <i class='bx bx-search' ></i>
+             <input type="text" placeholder="Search...">
+             <span class="tooltip">Search</span>
+          </li>
+          <li>
+            <a href="Home.html">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+             <span class="tooltip">Dashboard</span>
+          </li>
+          <li>
+           <a href="About me.html">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">About me</span>
+           </a>
+           <span class="tooltip">About me</span>
+         </li>
+         <li>
+           <a href="Contact us.html">
+             <i class='bx bx-chat' ></i>
+             <span class="links_name">Contact us</span>
+           </a>
+           <span class="tooltip">Contact us</span>
+         </li>
+         <li>
+            <a href="ABOUT.html">
+             <i class='bx bx-group'></i>
+              <span class="links_name">About</span>
+            </a>
+            <span class="tooltip">About</span>
+          </li>
+         
+          <li>
+            <a href="Date.html">
+             <i class='bx bx-calendar'></i>
+              <span class="links_name">About</span>
+            </a>
+            <span class="tooltip">About</span>
+          </li>
+             
+          <li>
+            <a href="heure.html">
+             <i class='bx bx-time-five'></i>
+              <span class="links_name">About</span>
+            </a>
+            <span class="tooltip">About</span>
+          </li>
+
+        </ul>
+      </div>
+      
+      <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+    
+      closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+      });
+    
+      searchBtn.addEventListener("click", ()=>{ 
+        sidebar.classList.toggle("open");
+        menuBtnChange(); 
+      });
+    
+      function menuBtnChange() {
+       if(sidebar.classList.contains("open")){
+         closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+       }else {
+         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+       }
+      }
+      </script>
+    </body>
+    <section id="section-wrapper" class="mer">
+        <div class="box-wrapper">
+            <div class="info-wrap">
+                
+            </div>
+            <img src="İnternetten Ürün Satmak İstiyorsanız Bunlara Dikkat Edin!.png" alt="" class="cov">
+            <div class="form-wrap">
+                <form action="#" method="POST">
+                    <h2 class="form-title">Send us a message</h2>
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <input type="text" class="fname" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="lname" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="email" placeholder="Mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="" placeholder="Write your message"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Send Message" class="submit-button">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

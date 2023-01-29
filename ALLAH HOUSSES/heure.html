@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Allah Houses</title>
+        <link rel="icon" href="Sans titre (6).png">
+    
+        <link rel="stylesheet" href="heure.css">
+        
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    </head>
+    <body>
+
+      <img src="Black Green Gold Modern Islamic Logo Template.png" alt="" class="log">
+
+      <iframe id="iframe" title="prayerWidget" class="widget-m-top" style=" height: 358px; border: 1px solid #ddd;" scrolling="no" src="https://www.islamicfinder.org/prayer-widget/2553604/shafi/1/0/18.0/17.0"> </iframe>
+      <iframe id="iframe1" title="prayertimesforlocations" style="width: 330px; height: 114px; border: 1px solid #ddd;" scrolling="no" src="https://www.islamicfinder.org/prayertimesforlocations" class="heu"> </iframe>
+        <div id="ResultContainer">
+    
+        </div>
+        <div class="sidebar">
+          <div class="logo-details">
+            <i class='bx bx-home-heart'></i>
+              <div class="logo_name">ALLAH Houses</div>
+              <i class='bx bx-menu' id="btn" ></i>
+          </div>
+         
+          <ul class="nav-list">
+            <li>
+                <i class='bx bx-search' ></i>
+               <input type="text" placeholder="Search...">
+               <span class="tooltip">Search</span>
+            </li>
+            <li>
+              <a href="#">
+                <i class='bx bx-grid-alt'></i>
+                <span class="links_name">Dashboard</span>
+              </a>
+               <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+             <a href="About me.html">
+               <i class='bx bx-user' ></i>
+               <span class="links_name">About me</span>
+             </a>
+             <span class="tooltip">About me</span>
+           </li>
+           <li>
+             <a href="Contact us.html">
+               <i class='bx bx-chat' ></i>
+               <span class="links_name">Contact us</span>
+             </a>
+             <span class="tooltip">Contact us</span>
+           </li>
+           
+           <li>
+             <a href="ABOUT.html">
+              <i class='bx bx-group'></i>
+               <span class="links_name">About</span>
+             </a>
+             <span class="tooltip">About</span>
+           </li>
+           
+           <li>
+            <a href="Date.html">
+             <i class='bx bx-calendar'></i>
+              <span class="links_name">About</span>
+            </a>
+            <span class="tooltip">About</span>
+          </li>
+             
+          <li>
+            <a href="heure.html">
+             <i class='bx bx-time-five'></i>
+              <span class="links_name">About</span>
+            </a>
+            <span class="tooltip">About</span>
+          </li>
+             
+           
+          </ul>
+        </div>
+        <div class="wrapper">
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+        </div>
+        <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+      
+        closeBtn.addEventListener("click", ()=>{
+          sidebar.classList.toggle("open");
+          menuBtnChange();//calling the function(optional)
+        });
+      
+        searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+          sidebar.classList.toggle("open");
+          menuBtnChange(); //calling the function(optional)
+        });
+      
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+         if(sidebar.classList.contains("open")){
+           closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+         }else {
+           closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+         }
+        }
+      
+        </script>
+      
+      
+      <script src="script.js"></script>
+      
+        
+
+    </body>
+</html>
